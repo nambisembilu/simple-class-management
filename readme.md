@@ -21,7 +21,7 @@ __Teachers__
  - A teacher can have none or many classes
 
 __Students__
- - A student must belong to one class
+ - A student can belong to none or one class
 
 ![ERD](readme-resources/entity-relationship-diagram.png?raw=true "ERD")
 
@@ -34,7 +34,7 @@ __Students__
  - once logged in, the user can list/create/edit/delete Classrooms, Teachers and Students.
  - the user can assign teachers and students to classrooms
  - the user can download a PDF file that lists all the Classrooms with the names of Teachers and Students in them.
- 
+
 ## Basic Requirements
  - Clone this repository to work on
  - The completed work should be based on Laravel 5.6, this repository is already based on Laravel 5.6
