@@ -6,11 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Laravel</title>
-
+        
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
+        <link href="{{ asset('vendor/bootstrap-4.1/bootstrap.min.css') }}" rel="stylesheet" media="all">
         <style>
             html, body {
                 background-color: #fff;
@@ -49,16 +50,6 @@
                 font-size: 84px;
             }
 
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
             .m-b-md {
                 margin-bottom: 30px;
             }
@@ -66,30 +57,22 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif
+            
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    This Project using Laravel
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a class="btn btn-primary btn-lg" href="{{ route('login') }}">Start</a>
                 </div>
             </div>
         </div>
+        <!-- Jquery JS-->
+        <script src="{{ asset('vendor/jquery-3.2.1.min.js') }}"></script>
+        <!-- Bootstrap JS-->
+        <script src="{{ asset('vendor/bootstrap-4.1/popper.min.js') }}"></script>
+        <script src="{{ asset('vendor/bootstrap-4.1/bootstrap.min.js') }}"></script>
     </body>
 </html>
