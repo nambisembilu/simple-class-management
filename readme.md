@@ -5,6 +5,8 @@ Basic CRUD application for a school to manage its classes, teachers and students
 ## Demo
 
 You can view demo on this project in [Here](https://patihnambi.com/demo/simple-class-management/)
+- **Username** : admin@kilk.co
+- **Pass** : 1234567890 
 
 ## How To Install
 
@@ -15,7 +17,12 @@ git clone
 
 Go to your directory project 
 ```
-git clone
+cd simple-class-management
+```
+
+Update dependencies 
+```
+composer update
 ```
 
 Editing file configuration 
