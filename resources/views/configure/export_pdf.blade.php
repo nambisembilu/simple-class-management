@@ -21,7 +21,7 @@
     </style>
     @foreach ($classes as $class)
     <h1>Class - {{ $class->name }} {{ $class->level }} ({{ $class->year }})</h1>
-    <h2>Teacher : {{ $class->teacher->first_name }} {{ $class->teacher->last_name }}</h2>
+    <h2>Teacher : @if($class->teacher) {{ $class->teacher->first_name }} {{ $class->teacher->last_name }} @else <i>Empty</i> @endif</h2>
     <table border="1" style="width:50%">
         <thead>
             <tr>
