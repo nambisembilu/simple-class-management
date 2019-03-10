@@ -4,7 +4,7 @@ Basic CRUD application for a school to manage its classes, teachers and students
 
 ## Demo
 
-You can view demo on this project in [Here](http://demo.patihnambi.com/simple-class-management/)
+You can view demo on this project in [Here](http://secure-scrubland-14720.herokuapp.com/public/)
 - **Username** : admin@kilk.co
 - **Pass** : 1234567890 
 
