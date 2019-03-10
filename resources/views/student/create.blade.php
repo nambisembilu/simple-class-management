@@ -10,6 +10,15 @@
                         <div class="card-header">
                             <strong>Student</strong> Create
                         </div>
+                        @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div><br />
+                        @endif
                         <form action="{{ route('student.store') }}" method="post" class="">
                             @csrf
                             <div class="card-body card-block">
@@ -18,7 +27,7 @@
                                     <input type="text"  name="first_name"  class="form-control" />
                                 </div>
                                 <div class="form-group">
-                                    <label for="last_name" class=" form-control-label">First Name</label>
+                                    <label for="last_name" class=" form-control-label">Last Name</label>
                                     <input type="text"  name="last_name"  class="form-control" />
                                 </div>
                                 <div class="form-group">

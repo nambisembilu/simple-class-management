@@ -28,7 +28,7 @@
                                     <input type="text"  name="first_name"  class="form-control" value="{{ $teacher->first_name }}" />
                                 </div>
                                 <div class="form-group">
-                                    <label for="last_name" class=" form-control-label">First Name</label>
+                                    <label for="last_name" class=" form-control-label">Last Name</label>
                                     <input type="text"  name="last_name"  class="form-control" value="{{ $teacher->last_name }}" />
                                 </div>
                                 <div class="form-group">

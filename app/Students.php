@@ -12,4 +12,13 @@ class Students extends Model
         'address'
     ];
 
+    public function class()
+    {
+        return $this->belongsTo('App\Classes');
+    }
+
+    public function getFullName()
+    {
+        return "{$this->first_name} {$this->last_name}";
+    }
 }

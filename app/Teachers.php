@@ -11,4 +11,14 @@ class Teachers extends Model
         'last_name',
         'address'
     ];
+
+    public function class()
+    {
+        return $this->hasMany('App\Classes');
+    }
+
+    public function getFullName()
+    {
+        return "{$this->first_name} {$this->last_name}";
+    }
 }

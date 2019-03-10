@@ -39,7 +39,6 @@ class TeacherController extends Controller
     {
         $request->validate([
             'first_name' => 'required',
-            'last_name' => 'required',
         ]);
         $teacher = new Teachers([
             'first_name' => $request->get('first_name'),
@@ -85,7 +84,6 @@ class TeacherController extends Controller
     {
         $request->validate([
             'first_name' => 'required',
-            'last_name' => 'required',
         ]);
 
         $teacher = Teachers::find($id);

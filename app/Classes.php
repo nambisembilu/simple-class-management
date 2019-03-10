@@ -11,4 +11,14 @@ class Classes extends Model
         'level',
         'year'
     ];
+
+    public function teacher()
+    {
+        return $this->belongsTo('App\Teachers');
+    }
+
+    public function student()
+    {
+        return $this->hasMany('App\Students','class_id');
+    }
 }

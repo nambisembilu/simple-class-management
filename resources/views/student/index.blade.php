@@ -18,10 +18,10 @@
             <div class="row m-t-30">
                 <div class="col-md-12">
                     @if(session()->get('success'))
-                        <div class="alert alert-success">
-                          {{ session()->get('success') }}  
-                        </div><br />
-                      @endif
+                    <div class="alert alert-success">
+                        {{ session()->get('success') }}  
+                    </div><br />
+                    @endif
                     <!-- DATA TABLE-->
                     <div class="table-responsive m-b-40">
                         <table class="table table-borderless table-data3">
