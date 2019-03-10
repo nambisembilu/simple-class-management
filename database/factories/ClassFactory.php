@@ -13,11 +13,12 @@ use Faker\Generator as Faker;
 |
 */
 
-$factory->define(App\User::class, function (Faker $faker) {
+
+$factory->define(App\Classes::class, function (Faker $faker) {
+    $class_name = ['Elementary', 'Middle School', 'High School'];
     return [
-        'name' => $faker->name,
-        'email' => $faker->unique()->safeEmail,
-        'password' => bcrypt('1234567890'), // secret
-        'remember_token' => str_random(10),
+        'name' => $class_name[rand(0, 2)],
+        'level' => rand(1, 3),
+        'year' => $faker->year($max = 'now')
     ];
 });
